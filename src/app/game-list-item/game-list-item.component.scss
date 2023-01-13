@@ -1,0 +1,31 @@
+:host {
+  display: block;
+  height: 200px;
+  overflow: hidden;
+
+  .inner {
+    border-radius: 6px;
+  }
+
+  .zoom {
+    transform-origin: center 0;
+    transform: scale(1.2)
+  }
+
+  .button-container {
+    transform-origin: top center;
+    animation: scale 1s forwards;
+    padding-top: 10px;
+  }
+
+  @keyframes scale {
+    from {
+      transform: scale(1.0);
+    }
+    to {
+      transform: scale(1.3);
+    }
+  }
+
+
+}

@@ -1,0 +1,12 @@
+<div class="inner text-center h-100 w-100 shadow-sm" [style.background]="bg">
+  <div class="button-container" *ngIf="isActive">
+    <div>
+      <a (click)="onClickButton('Демо')" class="btn btn-light btn-outline-primary btn-sm">Демо</a>
+    </div>
+    <div>
+      <a (click)="onClickButton('Играть')" class="btn btn btn-light btn-outline-danger btn-sm zoom">Играть</a>
+    </div>
+  </div>
+
+</div>
+
